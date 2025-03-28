@@ -1,0 +1,151 @@
+/* Admin Styles */
+.qr-thumbnail-container {
+    position: relative;
+    margin: 15px 0;
+}
+
+.qr-thumbnail {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.qr-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.qr-preview-link {
+    display: inline-block;
+    position: relative;
+}
+
+.qr-preview-link::after {
+    content: "🔍 Click to enlarge";
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.85em;
+    color: #666;
+    white-space: nowrap;
+}
+.input-group-addon.country-code-prefix {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    border-right: 0;
+    color: #495057;
+    pointer-events: none;
+    min-width: 85px;
+    text-align: center;
+}
+
+.input-group.fixed-width-lg {
+    width: 360px;
+}
+
+.current-qr {
+    max-width: 300px;
+    border: 2px solid #dee2e6;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+/* Frontend Styles */
+.esewa-phone-payment {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+.payment-phone-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.phone-display {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+.country-code {
+    color: #2e3192;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.phone-number {
+    font-family: monospace;
+    font-size: 1.1em;
+    color: #495057;
+}
+
+.copy-phone {
+    background: #2e3192;
+    border: none;
+    padding: 12px 20px;
+    transition: background 0.3s ease;
+}
+
+.copy-phone:hover {
+    background: #1a1c5a;
+}
+
+.copy-phone .material-icons {
+    font-size: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.instruction {
+    color: #6c757d;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.esewa-copy-alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 10000;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@media (max-width: 768px) {
+    .payment-phone-container {
+        flex-direction: column;
+    }
+    .qr-thumbnail {
+        max-width: 120px !important;
+        max-height: 120px !important;
+    }
+    .phone-display {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .copy-phone {
+        width: 100%;
+    }
+}

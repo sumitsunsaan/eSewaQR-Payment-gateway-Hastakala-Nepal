@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+    <name>esewaqr</name>
+    <displayName><![CDATA[eSewa Payment Gateway]]></displayName>
+    <version>2.1.1</version>
+    <description><![CDATA[Accept payments via eSewa QR Code or Phone Number]]></description>
+    <author><![CDATA[Sumit Dahal - Hastakala Nepal Pvt Ltd]]></author>
+    <tab><![CDATA[payments_gateways]]></tab>
+    <confirmUninstall>Are you sure you want to uninstall?</confirmUninstall>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <ps_versions_compliancy>
+        <min>8.2.0</min>
+        <max>8.99.99</max>
+    </ps_versions_compliancy>
+</module>
